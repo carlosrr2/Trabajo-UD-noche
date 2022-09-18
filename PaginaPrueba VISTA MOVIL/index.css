@@ -1,0 +1,218 @@
+/*ESTILIZACION GENERAL DE LA PAGINA*/
+
+* {
+    box-sizing: border-box; /*Evitar que cresca mas de lo establecido */
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Verdana, sans-serif; /*cambiable por buscar mejor font*/
+    margin: 0;
+}
+
+button {
+    font-size: 1.2em;
+    font-weight: bold;
+    border: 2px solid rgb(224, 15, 15);
+    padding: 7px 14px;
+    border-radius: 7px;
+    box-shadow: 1px 1px 12px rgb(168, 60, 60);
+    color: aliceblue;
+    background-color: rgb(255, 7, 7);
+}
+
+button:hover {
+    background-color: rgb(38, 2, 71); /*CAMBIO DE COLOR AL PASAR CURSOR*/
+}
+
+header{
+    background-color: rgb(206, 209, 211);
+}
+
+h1 { font-size: 3.2em;}
+h2 { font-size: 2.4em;}
+h3 { font-size: 1.7em;}
+p { font-size: 1.2em;}
+
+
+/* ESTILIZACION DEL HEADER*/
+
+.container
+{ 
+    max-width: 1300px;
+    margin: auto;
+}
+
+.logotipo {
+    color: rgb(204, 6, 6);
+    font-weight: bold;
+    font-size: 1.8em;
+    font-family: 'Franklin Gothic Medium',  sans-serif;
+}
+
+header .logotipo { 
+    margin: 0;
+    padding: 15px 25px;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+header a {
+    padding:  5px 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: rgb(184, 0, 0);
+}
+
+
+/* ESTILIZACION DE LOS SECTION*/
+
+/*ESTILIZACION PAGE MAIN*/
+
+#Principal {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgb(0,0,0,0.8),         /*linear-gradient oscurece el fondo da mas vida a la letra*/
+        rgb(0,0,0,0.8)) 
+    ,url(img/BGprin.jpg);
+    background-repeat: no-repeat; /*no se repita el fondo*/
+    background-size: cover; /*ocupe todo el espacio sin dejar espacios*/
+    background-position: center center; /*imagen siempre centrada*/
+}
+
+
+/*ESTILIZACION PAGE ABOUT*/
+
+#img_logo {
+    width: 160px;
+    height: auto;
+}
+
+#about {
+    background-color: aliceblue;
+}
+
+#about .container {
+    text-align: center;
+    padding: 220px 12px;
+}
+
+#color_logo {
+    color: rgb(196, 5, 5);
+    font-family: 'Franklin Gothic Medium';
+}
+
+
+/*ESTILIZACION PAGE PRODUCTOS*/
+
+#Nuestros_productos {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+#Nuestros_productos .container {
+    padding: 100px 15px;
+}
+
+#Nuetros_productos h2 {
+    margin-top: 0;
+    font-size: 3.5em;
+}
+
+#Nuetros_productos h3 {
+    margin-top: 0;
+    font-size: 5.5em;
+}
+
+#Nuestros_productos p {
+    display: none;
+}
+
+#Nuestros_productos .card {
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center center; 
+    padding: 50px;
+    margin: 15px;
+    border-radius: 8px;
+    
+}
+
+.card:first-child {
+    background-image: linear-gradient(
+        0deg,
+        rgb(0,0,0,0.8),         
+        rgb(0,0,0,0.8)) 
+    ,url(img/pagina-web.jpg);
+}
+
+.card:nth-child(2) {
+    background-image: linear-gradient(
+        0deg,
+        rgb(0,0,0,0.8),         
+        rgb(0,0,0,0.8)) 
+    ,url(img/software.jpg);
+}
+
+.card:nth-child(3) {
+    background-image: linear-gradient(
+        0deg,
+        rgb(0,0,0,0.8),         
+        rgb(0,0,0,0.8)) 
+    ,url(img/games.jpg);
+}
+
+
+/* ESTILIZACION INICIO DE SESION*/
+
+#contact_in {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgb(0,0,0,0.8),         
+        rgb(0,0,0,0.8)) 
+    ,url(img/BGinicio.jpg);
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center center; 
+}
+
+/*ESTILIZACION DEL FOOTER*/
+
+
+footer p {
+    text-align: center;
+    font-size: 1.40em;
+}
